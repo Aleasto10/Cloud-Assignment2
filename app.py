@@ -16,6 +16,7 @@ qa_chain = None
 tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
 MAX_TOKENS = 1024
 
+#nothing of interest
 class TruncatingHuggingFacePipeline(HuggingFacePipeline):
     def __init__(self, pipeline, tokenizer, max_tokens):
         super().__init__(pipeline=pipeline)
